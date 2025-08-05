@@ -20,13 +20,6 @@ Each folder represents a single feature or tutorial, containing:
 * A dedicated README.md with setup instructions
 * Minimal dependencies (vanilla JS / jQuery / WP core)
 
-```bash
-Wordpress-Snippets-Tutorials/
-├── responsive-menu/
-│   ├── js/
-│   ├── css/
-│   └── README.md
-└── README.md (you are here)
-```
+
 
 ---
