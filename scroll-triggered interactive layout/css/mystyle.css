@@ -1,0 +1,136 @@
+
+
+
+.info-subtitle{
+  font-size: 19.3px;
+  font-weight: 900;
+  color:#E61924 ;
+  flex-shrink: 5;
+
+}
+
+
+
+.info-title{
+  font-weight: 900;
+  font-size: 33.89px;
+  color: #6D6D6D;
+  border-bottom: 2px solid #ccc;
+  flex-shrink: 5;
+  margin-top: -10px;
+
+  
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+.scroll-right{
+  display: none;
+}
+}
+
+.scroll-sections-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;            
+  width: 100%;             
+  max-width: 100%;        
+  box-sizing: border-box;     
+}
+
+.scroll-left, .scroll-right {
+  flex: 1 1 0; 
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-left {
+  flex: 7;
+  justify-content: space-between; 
+}
+
+@media (max-width: 768px) {
+  .scroll-left {
+    flex: 1 1 100%;
+    justify-content: center; 
+  }
+}
+
+
+.scroll-right {
+  justify-content: flex-start;
+  gap: 2px; 
+  flex: 3;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+  margin-top: 150px;
+  padding: 50px 50px 0 50px;
+}
+
+/* Τα info-box να φαίνονται όμορφα */
+.scroll-right .info-box {
+  padding: 1px;
+
+}
+
+.info-box {
+  max-height: 999px;
+  padding: 10px 15px;
+  cursor: default;
+  transition: all 1s ease;
+  margin-bottom: 0;
+}
+
+
+
+.info-box.expanded {
+  max-height: 500px;
+}
+
+.info-subtitle,
+.info-text,
+.info-link {
+  display: none;
+  opacity: 0;
+  height: 0;
+  pointer-events: none;
+  transition: all 1s ease;
+}
+
+
+.info-box.expanded {
+  margin-bottom: 10px; 
+  margin-top: -10px;
+}
+
+.info-box.expanded .info-subtitle,
+.info-box.expanded .info-text,
+.info-box.expanded .info-link {
+  display: block;
+  opacity: 1;
+  height: auto;
+  pointer-events: auto;
+}
+
+.info-box.expanded .info-link{
+  border-bottom: 2px solid #ccc;
+  
+}
+
+.info-box.expanded .info-title{
+  font-size: 33.89px;
+  font-weight: 900;
+  color: black;
+  margin: 0;
+  flex-shrink: 5;
+  border-bottom: 0px solid #ccc;
+
+  
+
+}
